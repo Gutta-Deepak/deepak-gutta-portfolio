@@ -13,7 +13,11 @@ export const profile = {
   location: 'Hyderabad, India', email: 'deepaknaidu0000@gmail.com',
   links: { linkedin: 'https://www.linkedin.com/in/deepak-gutta-3228b9253/', github: 'https://github.com/Gutta-Deepak' },
   resumePdf: '/assets/Deepak_Gutta_Resume.pdf',
-  portrait: { src: '/assets/deepak-profile.jpg', srcSet: '/assets/deepak-profile.jpg', alt: 'Deepak Gutta portrait' },
+  portrait: {
+    src: `${import.meta.env.BASE_URL}assets/deepak-profile.jpg`,
+    srcSet: `${import.meta.env.BASE_URL}assets/deepak-profile.jpg`,
+    alt: 'Deepak Gutta portrait'
+  },
   interests: ['Enterprise Data Engineering', 'Snowflake & Cloud Warehousing', 'Data Integration & BI Analytics'],
 };
 
